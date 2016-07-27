@@ -1,0 +1,15 @@
+/*
+ Theme Name:   Glazy for You
+ Description:  A customized theme for Glazy for You! Pottery Place LLC.
+ Author:       Cori Snedecor
+ Author URI:   http://maine-websites.com
+ Template:     unite
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  unite
+*/
+.carousel-caption h4{
+  background: rgba(51, 115, 53, 0.8);
+  font-weight: 400;
+}
