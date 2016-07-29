@@ -12,5 +12,11 @@ function glazy_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'glazy_enqueue_styles', 11 );
 
+function remove_sidebars(){
+    unregister_sidebar('home1');
+    unregister_sidebar('home2');
+    unregister_sidebar('home3');
+}
+add_action('widgets_init', 'remove_sidebars', 11);
+
 include('inc/customizer.php');
-?>

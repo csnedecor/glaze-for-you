@@ -9,7 +9,127 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  unite
 */
+
+/* BRAND COLORS:
+  Dark Blue: #264c8f; rgba(38, 76, 143, 1.0);
+  Light Blue: #3eb1c4; rgba(62, 177, 196, 1.0)
+  Dark Green: #337335;
+  Light Green: #89d371;
+  Purple: #850f94; rgba(133, 15, 148, 1.0)
+  Magenta: #bf217d;
+  Pink: #f357bd;
+  Yellow: #f8e83f;
+*/
+/* General styles */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: 200;
+}
+h4, .h4{
+  font-size: 22px;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(133, 15, 148, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    margin-left: 5px;
+}
+.entry-title{
+  font-weight: 200;
+}
+
+/* Navbar */
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #ffffff;
+}
+
+/* Homepage carousel */
+.carousel-caption{
+  right: 0px;
+  bottom: 50px;
+}
 .carousel-caption h4{
-  background: rgba(51, 115, 53, 0.8);
+  background: rgba(38, 76, 143, 0.8);
   font-weight: 400;
+  max-width: 45%;
+}
+h4.no-caption, p.no-caption{
+  margin-bottom: 30px;
+}
+.carousel-caption p{
+  max-width: 40%;
+}
+.button-wrap{
+  text-align: center;
+}
+a.slider-button,
+input.pushbutton-wide{
+  background: #bf217d;
+  padding: 14px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border: 1px #bf217d solid ;
+}
+a.slider-button:hover,
+input.pushbutton-wide:hover{
+  color: white;
+  background: #f357bd;
+}
+.carousel-indicators{
+  margin-left: -29%;
+}
+
+/* Sidebar */
+.widget-title{
+  text-align: center;
+}
+.widget{
+  border: 2px #eee solid;
+  padding: 10px;
+}
+.widget .fts-jal-fb-header h1{
+  font-size:22px;
+}
+ol.tribe-list-widget{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+/* Footer */
+.site-info a:hover{
+  color: #f8e83f;
+}
+#menu-footer-menu{
+  color: white;
+}
+.footer-nav.nav > li{
+  text-align: center;
+}
+.fa:before{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+  .carousel-caption{
+    display: block;
+  }
+  .carousel-caption h4{
+    display: none;
+  }
+  .carousel-caption p{
+    display: none;
+  }
+  .side-pull-left #primary{
+    float: none;
+  }
 }
